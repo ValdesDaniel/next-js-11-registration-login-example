@@ -3,6 +3,7 @@ const fs = require('fs');
 // users in JSON file for simplicity, store in a db for production applications
 let users = require('data/users.json');
 
+
 export const usersRepo = {
     getAll: () => users,
     getById: id => users.find(x => x.id.toString() === id.toString()),
@@ -11,6 +12,10 @@ export const usersRepo = {
     update,
     delete: _delete
 };
+
+function createFichaTecnica(id, params) {
+    const user = users.find(x => x.id.toString() === id.toString());
+}
 
 function create(user) {
     // generate new user id

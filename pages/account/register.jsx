@@ -42,21 +42,22 @@ function Register() {
     return (
         <Layout>
             <div className="card">
-                <h4 className="card-header">Register</h4>
+            <img src='https://senacyt-my.sharepoint.com/:i:/r/personal/pasanteit_senacyt_gob_pa/Documents/Logo.png?csf=1&web=1&e=uKoHjq' className='img-fluid shadow-4 mx-auto my-2' alt='...' style={{ maxWidth: '18rem', minWidth: '10rem' }} />
+                <h4 className="text-center my-2">Registro</h4>
                 <div className="card-body">
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div className="form-group">
-                            <label>First Name</label>
+                            <label>Nombre</label>
                             <input name="firstName" type="text" {...register('firstName')} className={`form-control ${errors.firstName ? 'is-invalid' : ''}`} />
                             <div className="invalid-feedback">{errors.firstName?.message}</div>
                         </div>
                         <div className="form-group">
-                            <label>Last Name</label>
+                            <label>Apellido</label>
                             <input name="lastName" type="text" {...register('lastName')} className={`form-control ${errors.lastName ? 'is-invalid' : ''}`} />
                             <div className="invalid-feedback">{errors.lastName?.message}</div>
                         </div>
                         <div className="form-group">
-                            <label>Username</label>
+                            <label>Email</label>
                             <input name="username" type="text" {...register('username')} className={`form-control ${errors.username ? 'is-invalid' : ''}`} />
                             <div className="invalid-feedback">{errors.username?.message}</div>
                         </div>

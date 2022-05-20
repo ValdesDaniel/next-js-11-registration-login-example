@@ -20,7 +20,7 @@ function Edit({ id }) {
 
     return (
         <Layout>
-            <h1>Edit User</h1>
+            <h1>Editar Ficha Técnica</h1>
             {user ? <AddEdit user={user} /> : <Spinner /> }
         </Layout>
     );

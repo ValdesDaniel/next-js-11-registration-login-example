@@ -21,11 +21,11 @@ function Nav() {
     if (!user) return null;
     
     return (
-        <nav className="navbar navbar-expand navbar-dark bg-dark">
+        <nav className="navbar navbar-expand navbar-dark bg-primary shadow-lg">
             <div className="navbar-nav">
                 <NavLink href="/" exact className="nav-item nav-link">Home</NavLink>
-                <NavLink href="/users" className="nav-item nav-link">Users</NavLink>
-                <a onClick={logout} className="nav-item nav-link">Logout</a>
+                <NavLink href="/users" className="nav-item nav-link">Ficha Técnica</NavLink>
+                <a onClick={logout} className="nav-item nav-link">Cerrar Sesión</a>
             </div>
         </nav>
     );

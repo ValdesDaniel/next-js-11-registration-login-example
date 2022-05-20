@@ -2,10 +2,11 @@ import { useRouter } from 'next/router';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
-
 import { Link } from 'components';
 import { Layout } from 'components/account';
 import { userService, alertService } from 'services';
+
+
 
 export default Login;
 
@@ -14,7 +15,7 @@ function Login() {
 
     // form validation rules 
     const validationSchema = Yup.object().shape({
-        username: Yup.string().required('Username is required'),
+        username: Yup.string().required('Email is required'),
         password: Yup.string().required('Password is required')
     });
     const formOptions = { resolver: yupResolver(validationSchema) };
@@ -36,11 +37,12 @@ function Login() {
     return (
         <Layout>
             <div className="card">
-                <h4 className="card-header">Login</h4>
+                <img src='https://senacyt-my.sharepoint.com/:i:/r/personal/pasanteit_senacyt_gob_pa/Documents/Logo.png?csf=1&web=1&e=uKoHjq' className='img-fluid shadow-4 mx-auto my-2' alt='...' style={{ maxWidth: '18rem', minWidth: '10rem' }} />
+                <h4 className="text-center my-2">Ficha Técnica de Proyectos</h4>
                 <div className="card-body">
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div className="form-group">
-                            <label>Username</label>
+                            <label>Email</label>
                             <input name="username" type="text" {...register('username')} className={`form-control ${errors.username ? 'is-invalid' : ''}`} />
                             <div className="invalid-feedback">{errors.username?.message}</div>
                         </div>
@@ -51,9 +53,9 @@ function Login() {
                         </div>
                         <button disabled={formState.isSubmitting} className="btn btn-primary">
                             {formState.isSubmitting && <span className="spinner-border spinner-border-sm mr-1"></span>}
-                            Login
+                            Iniciar Sesión
                         </button>
-                        <Link href="/account/register" className="btn btn-link">Register</Link>
+                        <Link href="/account/register" className="btn btn-link">Registro</Link>
                     </form>
                 </div>
             </div>

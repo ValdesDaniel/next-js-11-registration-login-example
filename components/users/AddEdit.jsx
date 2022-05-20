@@ -16,7 +16,7 @@ function AddEdit(props) {
     // form validation rules 
     const validationSchema = Yup.object().shape({
         firstName: Yup.string()
-            .required('First Name is required'),
+            .required('Nombre del Proyecto es requerido'),
         lastName: Yup.string()
             .required('Last Name is required'),
         username: Yup.string()
@@ -65,38 +65,107 @@ function AddEdit(props) {
         <form onSubmit={handleSubmit(onSubmit)}>
             <div className="form-row">
                 <div className="form-group col">
-                    <label>First Name</label>
+                    <label>Título del Proyectoo</label>
                     <input name="firstName" type="text" {...register('firstName')} className={`form-control ${errors.firstName ? 'is-invalid' : ''}`} />
                     <div className="invalid-feedback">{errors.firstName?.message}</div>
                 </div>
                 <div className="form-group col">
-                    <label>Last Name</label>
+                    <label>Descripción del Proyecto</label>
                     <input name="lastName" type="text" {...register('lastName')} className={`form-control ${errors.lastName ? 'is-invalid' : ''}`} />
                     <div className="invalid-feedback">{errors.lastName?.message}</div>
                 </div>
             </div>
             <div className="form-row">
                 <div className="form-group col">
-                    <label>Username</label>
-                    <input name="username" type="text" {...register('username')} className={`form-control ${errors.username ? 'is-invalid' : ''}`} />
+                    <label>Líder del Proyecto</label>
+                    <input name="username" type="text" {...register('username')} className={`form-control ${errors.email ? 'is-invalid' : ''}`} />
                     <div className="invalid-feedback">{errors.email?.message}</div>
                 </div>
                 <div className="form-group col">
-                    <label>
-                        Password
-                        {!isAddMode && <em className="ml-1">(Leave blank to keep the same password)</em>}
-                    </label>
+                    <label>Responsable del proyecto de la Unidad</label>
                     <input name="password" type="password" {...register('password')} className={`form-control ${errors.password ? 'is-invalid' : ''}`} />
                     <div className="invalid-feedback">{errors.password?.message}</div>
                 </div>
             </div>
             <div className="form-group">
+            <div className="form-row">
+                <div className="form-group col">
+                <label>Nivel de autoridad</label>
+                    <input name="username" type="text" {...register('username')} className={`form-control ${errors.email ? 'is-invalid' : ''}`} />
+                    <div className="invalid-feedback">{errors.email?.message}</div>
+                </div>
+                <div className="form-group col">
+                    <label>Clasificación</label>
+                    <input name="lastName" type="text" {...register('lastName')} className={`form-control ${errors.lastName ? 'is-invalid' : ''}`} />
+                    <div className="invalid-feedback">{errors.lastName?.message}</div>
+                </div>
+            </div>
+            <div className="form-row">
+                <div className="form-group col">
+                <label>Nivel de autoridad</label>
+                    <input name="username" type="text" {...register('username')} className={`form-control ${errors.email ? 'is-invalid' : ''}`} />
+                    <div className="invalid-feedback">{errors.email?.message}</div>
+                </div>
+                <div className="form-group col">
+                    <label>Clasificación</label>
+                    <input name="lastName" type="text" {...register('lastName')} className={`form-control ${errors.lastName ? 'is-invalid' : ''}`} />
+                    <div className="invalid-feedback">{errors.lastName?.message}</div>
+                </div>
+            </div>
+            <div className="form-row">
+                <div className="form-group col">
+                <label>Requerimientos de los interesados</label>
+                    <input name="username" type="text" {...register('username')} className={`form-control ${errors.email ? 'is-invalid' : ''}`} />
+                    <div className="invalid-feedback">{errors.email?.message}</div>
+                </div>
+                <div className="form-group col">
+                    <label>Requerimientos Adicionales</label>
+                    <input name="lastName" type="text" {...register('lastName')} className={`form-control ${errors.lastName ? 'is-invalid' : ''}`} />
+                    <div className="invalid-feedback">{errors.lastName?.message}</div>
+                </div>
+            </div>
+            <div className="form-row">
+                <div className="form-group col">
+                <label>Descripción de los entregables</label>
+                    <input name="username" type="text" {...register('username')} className={`form-control ${errors.email ? 'is-invalid' : ''}`} />
+                    <div className="invalid-feedback">{errors.email?.message}</div>
+                </div>
+                <div className="form-group col">
+                    <label>Clientes del Sistema</label>
+                    <input name="lastName" type="text" {...register('lastName')} className={`form-control ${errors.lastName ? 'is-invalid' : ''}`} />
+                    <div className="invalid-feedback">{errors.lastName?.message}</div>
+                </div>
+            </div>
+            <div className="form-row">
+                <div className="form-group col">
+                <label>Versiones</label>
+                    <input name="username" type="text" {...register('username')} className={`form-control ${errors.email ? 'is-invalid' : ''}`} />
+                    <div className="invalid-feedback">{errors.email?.message}</div>
+                </div>
+                <div className="form-group col">
+                    <label>Naturaleza del cambio</label>
+                    <input name="lastName" type="text" {...register('lastName')} className={`form-control ${errors.lastName ? 'is-invalid' : ''}`} />
+                    <div className="invalid-feedback">{errors.lastName?.message}</div>
+                </div>
+            </div>
+            <div className="form-row">
+                <div className="form-group col">
+                <label>Fecha de aprobación</label>
+                    <input name="username" type="text" {...register('username')} className={`form-control ${errors.email ? 'is-invalid' : ''}`} />
+                    <div className="invalid-feedback">{errors.email?.message}</div>
+                </div>
+                <div className="form-group col">
+                    <label>Naturaleza del cambio</label>
+                    <input name="lastName" type="text" {...register('lastName')} className={`form-control ${errors.lastName ? 'is-invalid' : ''}`} />
+                    <div className="invalid-feedback">{errors.lastName?.message}</div>
+                </div>
+            </div>
                 <button type="submit" disabled={formState.isSubmitting} className="btn btn-primary mr-2">
                     {formState.isSubmitting && <span className="spinner-border spinner-border-sm mr-1"></span>}
-                    Save
+                    Guardar
                 </button>
                 <button onClick={() => reset(formOptions.defaultValues)} type="button" disabled={formState.isSubmitting} className="btn btn-secondary">Reset</button>
-                <Link href="/users" className="btn btn-link">Cancel</Link>
+                <Link href="/users" className="btn btn-link">Cancelar</Link>
             </div>
         </form>
     );

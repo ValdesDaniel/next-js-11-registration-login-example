@@ -25,14 +25,15 @@ function Index() {
 
     return (
         <Layout>
-            <h1>Users</h1>
-            <Link href="/users/add" className="btn btn-sm btn-success mb-2">Add User</Link>
+            <h1>Fichas Técnicas</h1>
+            <Link href="/users/add" className="btn btn-sm btn-success mb-2">Agregar Ficha Técnica</Link>
             <table className="table table-striped">
                 <thead>
                     <tr>
-                        <th style={{ width: '30%' }}>First Name</th>
-                        <th style={{ width: '30%' }}>Last Name</th>
-                        <th style={{ width: '30%' }}>Username</th>
+                        <th style={{ width: '22.5%' }}>Nombre del Proyecto</th>
+                        <th style={{ width: '22.5%' }}>Fecha de Inicio</th>
+                        <th style={{ width: '22.5%' }}>Fecha de Entrega</th>
+                        <th style={{ width: '22.5%' }}>Fecha de Entrega</th>
                         <th style={{ width: '10%' }}></th>
                     </tr>
                 </thead>
@@ -42,12 +43,13 @@ function Index() {
                             <td>{user.firstName}</td>
                             <td>{user.lastName}</td>
                             <td>{user.username}</td>
+                            <td>{user.username}</td>
                             <td style={{ whiteSpace: 'nowrap' }}>
-                                <Link href={`/users/edit/${user.id}`} className="btn btn-sm btn-primary mr-1">Edit</Link>
+                                <Link href={`/users/edit/${user.id}`} className="btn btn-sm btn-primary mr-1">Editar</Link>
                                 <button onClick={() => deleteUser(user.id)} className="btn btn-sm btn-danger btn-delete-user" disabled={user.isDeleting}>
                                     {user.isDeleting 
                                         ? <span className="spinner-border spinner-border-sm"></span>
-                                        : <span>Delete</span>
+                                        : <span>Eliminar</span>
                                     }
                                 </button>
                             </td>
@@ -63,7 +65,7 @@ function Index() {
                     {users && !users.length &&
                         <tr>
                             <td colSpan="4" className="text-center">
-                                <div className="p-2">No Users To Display</div>
+                                <div className="p-2">No tiene Proyectos en curso</div>
                             </td>
                         </tr>
                     }
