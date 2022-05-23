@@ -22,10 +22,10 @@ function Nav() {
     
     return (
         <nav className="navbar navbar-expand navbar-dark bg-primary shadow-lg">
-            <div className="navbar-nav">
-                <NavLink href="/" exact className="nav-item nav-link">Home</NavLink>
-                <NavLink href="/users" className="nav-item nav-link">Ficha Técnica</NavLink>
-                <a onClick={logout} className="nav-item nav-link">Cerrar Sesión</a>
+            <div className="navbar-nav d-flex flex-row justify-content-center align-items-center">
+                <NavLink href="/" exact className="nav-item nav-link text-center">Home</NavLink>
+                <NavLink href="/users" className="nav-item nav-link text-center">Ficha Técnica</NavLink>
+                <a onClick={logout} className="nav-item nav-link text-center">Cerrar Sesión</a>
             </div>
         </nav>
     );

@@ -1,6 +1,6 @@
 [
     {
-        "firstName": "Daniellll",
+        "firstName": "Daniel",
         "lastName": "Valdés",
         "username": "daniel23",
         "hash": "$2a$10$heqTq5cxhCY4Om0EfEBdI./gb9P2AnTtg1t4xAVWyOykQ.OvBiv1q",
@@ -16,5 +16,14 @@
         "id": 2,
         "dateCreated": "2022-05-20T19:13:38.558Z",
         "dateUpdated": "2022-05-20T19:13:38.558Z"
+    },
+    {
+        "firstName": "Daniel ",
+        "lastName": "Valdés",
+        "username": "pasanteit@senacyt.gob.pa",
+        "hash": "$2a$10$vDwQY8pPyZ7CP4gsl2r5NuY5TfzjNVa0gcXwAsKC7bSk5Yh02GZ0m",
+        "id": 3,
+        "dateCreated": "2022-05-23T20:48:15.341Z",
+        "dateUpdated": "2022-05-23T20:48:15.341Z"
     }
 ]

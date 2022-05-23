@@ -27,22 +27,20 @@ function Index() {
         <Layout>
             <h1>Fichas Técnicas</h1>
             <Link href="/users/add" className="btn btn-sm btn-success mb-2">Agregar Ficha Técnica</Link>
-            <table className="table table-striped">
-                <thead>
+            <table className="table table-striped shadow-lg w-100 p-5">
+                <thead className='thead-dark'>
                     <tr>
-                        <th style={{ width: '22.5%' }}>Nombre del Proyecto</th>
-                        <th style={{ width: '22.5%' }}>Fecha de Inicio</th>
-                        <th style={{ width: '22.5%' }}>Fecha de Entrega</th>
-                        <th style={{ width: '22.5%' }}>Fecha de Entrega</th>
+                        <th style={{ width: '30%' }}>Nombre del Proyecto</th>
+                        <th style={{ width: '30%' }}>Fecha de Inicio</th>
+                        <th style={{ width: '30%' }}>Fecha de Entrega</th>
                         <th style={{ width: '10%' }}></th>
                     </tr>
                 </thead>
                 <tbody>
                     {users && users.map(user =>
                         <tr key={user.id}>
-                            <td>{user.firstName}</td>
+                            <td>{user.tituloproyecto}</td>
                             <td>{user.lastName}</td>
-                            <td>{user.username}</td>
                             <td>{user.username}</td>
                             <td style={{ whiteSpace: 'nowrap' }}>
                                 <Link href={`/users/edit/${user.id}`} className="btn btn-sm btn-primary mr-1">Editar</Link>

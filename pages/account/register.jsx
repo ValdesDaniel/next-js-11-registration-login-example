@@ -68,9 +68,9 @@ function Register() {
                         </div>
                         <button disabled={formState.isSubmitting} className="btn btn-primary">
                             {formState.isSubmitting && <span className="spinner-border spinner-border-sm mr-1"></span>}
-                            Register
+                            Registrar
                         </button>
-                        <Link href="/account/login" className="btn btn-link">Cancel</Link>
+                        <Link href="/account/login" className="btn btn-link">Cancelar</Link>
                     </form>
                 </div>
             </div>
