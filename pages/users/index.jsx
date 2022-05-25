@@ -33,14 +33,14 @@ function Index() {
                         <th style={{ width: '30%' }}>Nombre del Proyecto</th>
                         <th style={{ width: '30%' }}>Fecha de Inicio</th>
                         <th style={{ width: '30%' }}>Fecha de Entrega</th>
-                        <th style={{ width: '10%' }}></th>
+                        <th style={{ width: '10%' }}>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
                     {users && users.map(user =>
                         <tr key={user.id}>
-                            <td>{user.tituloproyecto}</td>
-                            <td>{user.lastName}</td>
+                            <td>{user.username}</td>
+                            <td>{user.username}</td>
                             <td>{user.username}</td>
                             <td style={{ whiteSpace: 'nowrap' }}>
                                 <Link href={`/users/edit/${user.id}`} className="btn btn-sm btn-primary mr-1">Editar</Link>

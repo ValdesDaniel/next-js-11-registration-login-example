@@ -1,23 +1,5 @@
 [
     {
-        "firstName": "Daniel",
-        "lastName": "Valdés",
-        "username": "daniel23",
-        "hash": "$2a$10$heqTq5cxhCY4Om0EfEBdI./gb9P2AnTtg1t4xAVWyOykQ.OvBiv1q",
-        "id": 1,
-        "dateCreated": "2022-05-19T18:13:22.734Z",
-        "dateUpdated": "2022-05-19T18:13:22.734Z"
-    },
-    {
-        "firstName": "Veronica",
-        "lastName": "Harris",
-        "username": "veroharris23",
-        "hash": "$2a$10$U27bDo9x3.yr8d9lhMR.e.Vpfby3IB8nMTXLTArJ4sndxS.A5VbIK",
-        "id": 2,
-        "dateCreated": "2022-05-20T19:13:38.558Z",
-        "dateUpdated": "2022-05-20T19:13:38.558Z"
-    },
-    {
         "firstName": "Daniel ",
         "lastName": "Valdés",
         "username": "pasanteit@senacyt.gob.pa",
@@ -25,5 +7,14 @@
         "id": 3,
         "dateCreated": "2022-05-23T20:48:15.341Z",
         "dateUpdated": "2022-05-23T20:48:15.341Z"
+    },
+    {
+        "firstName": "Veronica",
+        "lastName": "harris",
+        "username": "veronicah23@gotmail.com",
+        "hash": "$2a$10$VtBLRi07Gv9Ios8UWxGIAO4vwKI1yKVY1HqLJFu9NiMNTb2kg3Waq",
+        "id": 4,
+        "dateCreated": "2022-05-25T18:52:05.336Z",
+        "dateUpdated": "2022-05-25T18:52:05.336Z"
     }
 ]
